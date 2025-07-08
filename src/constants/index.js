@@ -111,17 +111,17 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "MUSÉE ABDERRAHMAN SLAOUI",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
-    href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
+      "Site web pour MUSÉE ABDERRAHMAN SLAOUI - Un patrimoine artistique et culturel marocain d'exception.",
+    href: "https://musee-as.vercel.app/",
+    image: "/assets/projects/MAS.png",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "React.js" },
+      { id: 3, name: "Tailwind CSS" },
+      { id: 4, name: "GSAP" },
     ],
   },
   {
@@ -171,11 +171,7 @@ export const projects = [
   },
 ];
 export const socials = [
-  { name: "Instagram", href: "https://www.instagram.com/ali.sanatidev/reels/" },
-  {
-    name: "Youtube",
-    href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
-  },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-  { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+  { name: "Instagram", href: "https://www.instagram.com/rsn.abdellah/" },
+  { name: "GitHub", href: "https://github.com/AbdellahRAISSOUNI" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/abdellah-raissouni-1419432a8/" },
 ];
