@@ -126,17 +126,18 @@ export const projects = [
   },
   {
     id: 4,
-    name: "Electronics & Gadgets Store",
+    name: "OramaChain",
     description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
-    href: "",
-    image: "/assets/projects/electronics-store.jpg",
+      "OramaChain - AI-Native Fleet & Supply Chain Management Platform powered by blockchain and real-time analytics.",
+    href: "https://oramachain.vercel.app/",
+    image: "/assets/projects/oramachain.png",
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "React.js" },
+      { id: 3, name: "OpenAI" },
+      { id: 4, name: "Node.js" },
+      { id: 5, name: "Tailwind CSS" },
     ],
   },
   {
