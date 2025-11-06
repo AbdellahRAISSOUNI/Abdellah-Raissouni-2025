@@ -3,6 +3,7 @@ import { Planet } from "../components/Planet";
 import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
+import DownloadResumeButton from "../components/DownloadResumeButton";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -20,6 +21,12 @@ results driven webs/apps`;
         text={text}
         textColor={"text-black"}
       />
+      
+      {/* Resume Button */}
+      <div className="absolute bottom-8 left-10 z-10 md:bottom-12 lg:bottom-16">
+        <DownloadResumeButton variant="primary" />
+      </div>
+      
       <figure
         className="absolute inset-0 -z-50 w-full h-full"
       >

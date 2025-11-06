@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { AnimatedTextLines } from "../components/AnimatedTextLines";
+import DownloadResumeButton from "../components/DownloadResumeButton";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -55,8 +56,13 @@ Beyond coding, I'm dedicated to sharing knowledge through tech articles and ment
             className="w-full max-w-md rounded-3xl lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl object-cover"
           />
         </div>
-        <div className="w-full lg:w-1/2 flex items-center">
+        <div className="w-full lg:w-1/2 flex flex-col items-start gap-8">
           <AnimatedTextLines text={aboutText} className={"w-full"} />
+          <DownloadResumeButton 
+            variant="secondary" 
+            withScrollTrigger={true}
+            className="self-start"
+          />
         </div>
       </div>
     </section>

@@ -80,23 +80,7 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Emsi Share",
-    description:
-      "Emsi Share - an online Platform to share files",
-    href: "https://emsi-share.vercel.app/",
-    image: "/assets/projects/EmsiShare.png",
-    bgImage: "/assets/backgrounds/blanket.jpg",
-    frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "Supabase" },
-      { id: 5, name: "Tailwind CSS" },
-    ],
-  },
-  {
-    id: 2,
-    name: "ADE Ensate - Clubs Manager",
+    name: "ADE ENSATé - Clubs Manager",
     description:
       "Revolutionizing Club Management - AI-powered scheduling, real-time analytics, and seamless collaboration tools for student clubs.",
     href: "https://ade-clubs-manager.vercel.app/",
@@ -110,18 +94,36 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    name: "MUSÉE ABDERRAHMAN SLAOUI",
+    id: 2,
+    name: "EMSI Share",
     description:
-      "Site web pour MUSÉE ABDERRAHMAN SLAOUI - Un patrimoine artistique et culturel marocain d'exception.",
-    href: "https://musee-as.vercel.app/",
-    image: "/assets/projects/MAS.png",
-    bgImage: "/assets/backgrounds/map.jpg",
+      "EMSI Share - an online Platform to share files",
+    href: "https://emsi-share.vercel.app/",
+    image: "/assets/projects/EmsiShare.png",
+    bgImage: "/assets/backgrounds/blanket.jpg",
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "Next.js" },
+      { id: 3, name: "Node.js" },
+      { id: 4, name: "Supabase" },
+      { id: 5, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: 3,
+    name: "WaslMed",
+    description:
+      "WaslMed: Smart Health platform - Next generation healthcare combining modern technology with personalized care.",
+    href: "",
+    image: "/assets/projects/WaslMEd1.png",
+    bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "Next.js" },
-      { id: 2, name: "React.js" },
-      { id: 3, name: "Tailwind CSS" },
-      { id: 4, name: "GSAP" },
+      { id: 2, name: "Node.js" },
+      { id: 3, name: "QR Code Scanning" },
+      { id: 4, name: "MongoDB" },
+      { id: 5, name: "PWA" },
+      { id: 6, name: "AI" },
     ],
   },
   {
@@ -142,6 +144,38 @@ export const projects = [
   },
   {
     id: 5,
+    name: "SPLEUX",
+    description:
+      "SPLEUX ACADEMY - Smart Analytics Intelligence platform with advanced algorithmic signals, 97% accuracy, and a global community of 35,000+ members.",
+    href: "",
+    image: "/assets/projects/spleux 1.png",
+    bgImage: "/assets/backgrounds/poster.jpg",
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Tailwind CSS" },
+      { id: 4, name: "Vercel" },
+      { id: 5, name: "GitHub Actions" },
+      { id: 6, name: "CI/CD" },
+    ],
+  },
+  {
+    id: 6,
+    name: "MUSÉE ABDERRAHMAN SLAOUI",
+    description:
+      "Site web pour MUSÉE ABDERRAHMAN SLAOUI - Un patrimoine artistique et culturel marocain d'exception.",
+    href: "https://musee-as.vercel.app/",
+    image: "/assets/projects/MAS.png",
+    bgImage: "/assets/backgrounds/map.jpg",
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "React.js" },
+      { id: 3, name: "Tailwind CSS" },
+      { id: 4, name: "GSAP" },
+    ],
+  },
+  {
+    id: 7,
     name: "BARBAROS",
     description:
       "BARBAROS - Web/Mobile rewards system for clients and barbers with precision grooming and loyalty management.",
@@ -154,23 +188,6 @@ export const projects = [
       { id: 3, name: "QR Code Scanning" },
       { id: 4, name: "MongoDB" },
       { id: 5, name: "PWA" },
-    ],
-  },
-  {
-    id: 6,
-    name: "WaslMed",
-    description:
-      "WaslMed: Smart Health platform - Next generation healthcare combining modern technology with personalized care.",
-    href: "",
-    image: "/assets/projects/WaslMEd1.png",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "Next.js" },
-      { id: 2, name: "Node.js" },
-      { id: 3, name: "QR Code Scanning" },
-      { id: 4, name: "MongoDB" },
-      { id: 5, name: "PWA" },
-      { id: 6, name: "AI" },
     ],
   },
 ];
