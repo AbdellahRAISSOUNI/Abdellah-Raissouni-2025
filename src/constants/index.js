@@ -95,6 +95,22 @@ export const projects = [
   },
   {
     id: 2,
+    name: "ENSA-OFFLINE Store",
+    description:
+      "ENSA-OFFLINE Store - Playful e-commerce experience for campus merchandise with bold typography and interactive animations.",
+    href: "https://github.com/AbdellahRAISSOUNI/Ensa-Offline-Store",
+    image: "/assets/projects/screenshot-ensa offline project.png",
+    bgImage: "/assets/backgrounds/poster.jpg",
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "React.js" },
+      { id: 3, name: "Tailwind CSS" },
+      { id: 4, name: "Node.js" },
+      { id: 5, name: "MongoDB" },
+    ],
+  },
+  {
+    id: 3,
     name: "EMSI Share",
     description:
       "EMSI Share - an online Platform to share files",
@@ -110,7 +126,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "WaslMed",
     description:
       "WaslMed: Smart Health platform - Next generation healthcare combining modern technology with personalized care.",
@@ -127,7 +143,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "OramaChain",
     description:
       "OramaChain - AI-Native Fleet & Supply Chain Management Platform powered by blockchain and real-time analytics.",
@@ -143,7 +159,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "SPLEUX",
     description:
       "SPLEUX ACADEMY - Smart Analytics Intelligence platform with advanced algorithmic signals, 97% accuracy, and a global community of 35,000+ members.",
@@ -160,7 +176,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "MUSÉE ABDERRAHMAN SLAOUI",
     description:
       "Site web pour MUSÉE ABDERRAHMAN SLAOUI - Un patrimoine artistique et culturel marocain d'exception.",
@@ -175,7 +191,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "BARBAROS",
     description:
       "BARBAROS - Web/Mobile rewards system for clients and barbers with precision grooming and loyalty management.",
