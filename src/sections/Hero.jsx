@@ -23,7 +23,7 @@ results driven webs/apps`;
       />
       
       {/* Resume Button */}
-      <div className="absolute bottom-8 left-10 z-10 md:bottom-12 lg:bottom-16">
+      <div className="absolute bottom-5 left-3 z-10 sm:bottom-8 sm:left-6 md:bottom-12 md:left-10 lg:bottom-16">
         <DownloadResumeButton variant="primary" />
       </div>
       

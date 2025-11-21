@@ -116,11 +116,11 @@ const DownloadResumeButton = ({
   const baseClasses = "relative overflow-hidden cursor-pointer group transition-all duration-300";
   
   const variantClasses = {
-    primary: "border-2 border-black text-black hover:text-white",
-    secondary: "border-2 border-white text-white hover:text-black"
+    primary: "border border-black text-black hover:text-white md:border-2",
+    secondary: "border border-white text-white hover:text-black md:border-2"
   };
 
-  const sizeClasses = "px-8 py-4 md:px-10 md:py-5 lg:px-12 lg:py-6";
+  const sizeClasses = "px-3 py-2 sm:px-4 sm:py-2.5 md:px-10 md:py-5 lg:px-12 lg:py-6";
 
   return (
     <button
@@ -135,17 +135,17 @@ const DownloadResumeButton = ({
       />
       
       {/* Content */}
-      <div className="flex items-center justify-center gap-3 md:gap-4">
+      <div className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4">
         <span
           ref={textRef}
-          className="font-light uppercase tracking-wider text-sm md:text-base lg:text-lg leading-none"
+          className="font-light uppercase tracking-wide text-[10px] sm:text-xs md:text-base lg:text-lg leading-none whitespace-nowrap"
         >
           Download Resume
         </span>
         <div ref={iconRef} className="flex items-center">
           <Icon
             icon="lucide:download"
-            className="text-lg md:text-xl lg:text-2xl"
+            className="text-sm sm:text-base md:text-xl lg:text-2xl"
           />
         </div>
       </div>
