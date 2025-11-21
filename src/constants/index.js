@@ -98,7 +98,7 @@ export const projects = [
     name: "ENSA-OFFLINE Store",
     description:
       "ENSA-OFFLINE Store - Playful e-commerce experience for campus merchandise with bold typography and interactive animations.",
-    href: "https://github.com/AbdellahRAISSOUNI/Ensa-Offline-Store",
+    href: "https://ensa-offline.store/",
     image: "/assets/projects/screenshot-ensa offline project.png",
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
