@@ -206,6 +206,22 @@ export const projects = [
       { id: 5, name: "PWA" },
     ],
   },
+  {
+    id: 9,
+    name: "DDMRP Experts",
+    description:
+      "DDMRP Experts - Supply Chain Excellence through Demand Driven Material Requirements Planning.",
+    href: "", // No link provided, leaving empty or could be "#"
+    image: "/assets/projects/ddmrp.png",
+    bgImage: "/assets/backgrounds/poster.jpg", // Reusing a background
+    frameworks: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "MongoDB" },
+      { id: 3, name: "React.js" },
+      { id: 4, name: "Tailwind CSS" },
+      { id: 5, name: "Node.js" },
+    ],
+  },
 ];
 export const socials = [
   { name: "Instagram", href: "https://www.instagram.com/rsn.abdellah/" },
