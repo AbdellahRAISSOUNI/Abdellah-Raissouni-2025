@@ -39,7 +39,7 @@ const AnimatedHeaderSection = ({
     );
   }, []);
   return (
-    <div ref={contextRef}>
+    <div ref={contextRef} className="relative z-10">
       <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
         <div
           ref={headerRef}
@@ -52,17 +52,12 @@ const AnimatedHeaderSection = ({
           </p>
           <div className="px-10">
             <h1
-              className={`flex flex-col uppercase banner-text-responsive md:block ${textColor}`}
-              style={{ lineHeight: '0.8' }}
+              className={`flex flex-col uppercase banner-text-responsive ${textColor}`}
             >
               {titleParts.map((part, index) => (
                 <span 
                   key={index} 
-                  className="block md:inline"
-                  style={{ 
-                    marginBottom: index === 0 ? 'calc(0.8vh)' : '0',
-                    display: 'block'
-                  }}
+                  className="block"
                 >{part}</span>
               ))}
             </h1>

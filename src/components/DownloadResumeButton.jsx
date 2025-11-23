@@ -93,7 +93,7 @@ const DownloadResumeButton = ({
   const handleDownload = () => {
     // Create a temporary link element
     const link = document.createElement('a');
-    link.href = '/assets/resume/Abdellah Raissouni en.pdf';
+    link.href = '/assets/resume/Abdellah Raissouni CV en.pdf';
     link.download = 'Abdellah_Raissouni_Resume.pdf';
     document.body.appendChild(link);
     link.click();
