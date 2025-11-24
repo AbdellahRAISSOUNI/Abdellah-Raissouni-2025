@@ -13,11 +13,11 @@ const ContactSummary = () => {
     "Excellence",
   ];
   const items2 = [
-    "contact us",
-    "contact us",
-    "contact us",
-    "contact us",
-    "contact us",
+    "Contact Us",
+    "Contact Us",
+    "Contact Us",
+    "Contact Us",
+    "Contact Us",
   ];
 
   useGSAP(() => {
