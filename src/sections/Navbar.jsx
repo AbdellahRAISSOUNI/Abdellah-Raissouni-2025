@@ -10,6 +10,7 @@ const Navbar = () => {
   const contactRef = useRef(null);
   const topLineRef = useRef(null);
   const bottomLineRef = useRef(null);
+  const burgerRef = useRef(null);
   const tl = useRef(null);
   const iconTl = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -85,6 +86,23 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (!isOpen) return;
+
+      const clickedInsideNav = navRef.current?.contains(event.target);
+      const clickedBurger = burgerRef.current?.contains(event.target);
+      if (clickedInsideNav || clickedBurger) return;
+
+      tl.current?.reverse();
+      iconTl.current?.reverse();
+      setIsOpen(false);
+    };
+
+    document.addEventListener("pointerdown", handleOutsideClick);
+    return () => document.removeEventListener("pointerdown", handleOutsideClick);
+  }, [isOpen]);
+
   const toggleMenu = () => {
     if (isOpen) {
       tl.current.reverse();
@@ -147,6 +165,7 @@ const Navbar = () => {
         </div>
       </nav>
       <div
+        ref={burgerRef}
         className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-5 md:right-10"
         onClick={toggleMenu}
         style={

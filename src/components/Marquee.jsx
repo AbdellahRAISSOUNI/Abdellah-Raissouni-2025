@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import gsap from "gsap";
 import { Observer } from "gsap/all";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 gsap.registerPlugin(Observer);
 const Marquee = ({
   items,
@@ -117,14 +117,19 @@ const Marquee = ({
     return tl;
   }
 
-  useEffect(() => {
-    const tl = horizontalLoop(itemsRef.current, {
+  const itemsKey = items.join("\0");
+
+  useLayoutEffect(() => {
+    const itemEls = itemsRef.current.filter(Boolean);
+    if (!itemEls.length) return;
+
+    const tl = horizontalLoop(itemEls, {
       repeat: -1,
       paddingRight: 30,
       reversed: reverse,
     });
 
-    Observer.create({
+    const observer = Observer.create({
       onChangeY(self) {
         let factor = 2.5;
         if ((!reverse && self.deltaY < 0) || (reverse && self.deltaY > 0)) {
@@ -140,8 +145,13 @@ const Marquee = ({
           .to(tl, { timeScale: factor / 2.5, duration: 1 }, "+=0.3");
       },
     });
-    return () => tl.kill();
-  }, [items, reverse]);
+
+    return () => {
+      observer.kill();
+      tl.kill();
+      gsap.set(itemEls, { clearProps: "transform" });
+    };
+  }, [itemsKey, reverse]);
   return (
     <div
       ref={containerRef}

@@ -52,9 +52,12 @@ const Contact = () => {
             <div className="social-link">
               <h2>Phone</h2>
               <div className="w-full h-px my-2 bg-white/30" />
-              <p className="text-xl lowercase md:text-2xl lg:text-3xl">
+              <a
+                href="tel:+212689541661"
+                className="block text-xl lowercase md:text-2xl lg:text-3xl hover:text-white/80 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
                 +212 6 89 54 16 61
-              </p>
+              </a>
             </div>
             <div className="social-link">
               <h2>Social Media</h2>
